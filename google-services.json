@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559870208447",
+    "project_id": "justview-9cc61",
+    "storage_bucket": "justview-9cc61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559870208447:android:9ce6db68dcc637f41d190a",
+        "android_client_info": {
+          "package_name": "com.kesh.justview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559870208447-u88qobj3qt6di5st0fbbocarath8u6q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-XTu1DF4O614ebYO5tbuudrNWJI7FSfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559870208447-u88qobj3qt6di5st0fbbocarath8u6q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
