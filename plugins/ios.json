@@ -1,0 +1,88 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-android-firebase-gradle-release": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-android-play-services-gradle-release": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-cocoapod-support": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-crosswalk-webview": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-firebasex": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access for artists to post their works and photos for users requesting",
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access for artists to post their works and photos for users requesting",
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "ionic-plugin-deeplinks": {
+      "URL_SCHEME": "jolie",
+      "DEEPLINK_SCHEME": "http",
+      "DEEPLINK_HOST": "jolie.com.ng",
+      "PACKAGE_NAME": "com.munchbox.app"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.munchbox.app"
+    }
+  }
+}

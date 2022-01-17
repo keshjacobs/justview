@@ -1,0 +1,100 @@
+<ion-view cache-view="true">
+    <style>
+
+.tabs-striped .tab-item.tab-item-active{
+  border-top: 4px solid rgb(192, 189, 4) !important;
+}
+
+ .tabs{
+      background-color: #044627 !important;
+      height: 72px !important;
+      opacity: 1;
+      padding: 0px !important;
+      border: none !important;
+      font-size: 14px !important;
+}
+
+ .tabs .tab-item{
+  color:rgba(148, 151, 123, 0.904);
+      padding-bottom: 20px !important;
+      border: none !important;
+}
+
+.tabs .tab-item i{
+      font-size: 25px !important;
+      padding-top: 4px !important;
+}
+
+
+ .tabs .tab-item .tab-item-active{
+  font-weight: bold !important;
+  color: rgb(255, 255, 255) !important;
+  border-top: 3px solid #fff !important;
+}
+
+
+.tabs .tab-item .tab-item-active span{
+  color: rgb(255, 255, 255) !important;
+}
+
+.tabs .tab-item span{
+  font-weight: bold !important;
+  margin-bottom:24px !important;
+  font-size: 15px !important;
+  margin-top: -20px !important;
+  line-height: -50px !important;
+}
+
+
+.tabs .tab-item-active i{
+  color: #ffffff;
+  font-size: 25px !important;
+}
+
+
+
+  </style>
+    <ion-tabs class="tabs-striped tab-dark">
+      
+
+      <ion-tab  icon="ion-ios-pie" title="Dashboard"  href="#/front/dashboard">
+        <ion-nav-view name="front-dashboard"></ion-nav-view>
+      </ion-tab>
+
+
+    
+      <ion-tab  icon="ion-search" title="Explore"  href="#/front/find">
+        <ion-nav-view name="front-find"></ion-nav-view>
+      </ion-tab>
+
+      
+
+
+
+
+      <ion-tab  badge="reports.length || 0" title="Reports" badge-style="badge-oran-alt" icon="ion-clipboard" href="#/front/reports">
+        <ion-nav-view name="front-reports"></ion-nav-view>
+      </ion-tab>
+
+
+
+
+      <ion-tab icon="ion-gear-b" title="Settings" href="#/front/settings">
+        <ion-nav-view name="front-settings"></ion-nav-view>
+      </ion-tab>
+
+
+
+
+    </ion-tabs>
+
+
+
+</ion-view>
+
+
+
+
+
+
+

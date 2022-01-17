@@ -1,0 +1,43 @@
+<ion-view  align-title="left" class="bg-grey" cache-view="true">
+
+    <ion-nav-bar class="bar bg-grey">
+
+        <ion-nav-title class="text-center" align="center">
+            <b class="dark">Settings</b>
+        </ion-nav-title>
+
+        <ion-nav-buttons side="left">
+            <img src="img/icon-green.png" class="bar-logo"/>
+        </ion-nav-buttons>
+        
+      
+        
+    </ion-nav-bar>
+
+
+
+
+<ion-content class="bg-grey padding">
+    <h4><b>You are logged in as</b></h4>
+    <div class="item item-avatar">
+        <img src="{{media + user.photo}}" class="avatar"/>
+        <h2 style="margin-top: 0px !important;"><b>{{user.full_name}}</b></h2>
+        <h5>@{{user.user_name}}</h5>
+    </div>
+<br>
+
+    <div ng-click="logout()" class="item text-left item-icon-right assertive">
+      LOGOUT
+    </div>
+
+    </ion-content>
+
+
+
+    <div ng-include src="'components/now_playing.html'"></div>
+
+  
+      
+
+</ion-view>
+

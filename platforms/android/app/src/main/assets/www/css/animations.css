@@ -1,0 +1,80 @@
+/* .scale-in {
+   transform: scale(0.9);
+   opacity: 0;
+ }
+ */
+ .scale-in.ng-enter,
+ .scale-in > .ng-enter {
+   transition: all cubic-bezier(.1, .7, .1, 1) 400ms;
+ }
+ 
+ .scale-in.ng-enter-active,
+ .scale-in > .ng-enter-active {
+   transform: scale(1);
+   opacity: 1;
+ }
+ 
+ .scale-in.ng-leave,
+ .scale-in > .ng-leave {
+   transition: all ease-in-out 250ms;
+ } 
+
+
+
+
+.edge_loader {
+  animation-name: flash_border !important;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation-name: flash_border !important;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+
+  -moz-animation-name: flash_border !important;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  
+}
+
+
+
+
+.bottom_loader {
+  float: left !important;
+  width: 100vw !important;
+  animation-name: flash_border2 !important;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation-name: flash_border2 !important;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+
+  -moz-animation-name: flash_border2 !important;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  
+}
+
+
+
+@keyframes flash_border {
+  0%{ border-top:5px solid #13bd16}
+  30%{ border-top: 5px solid #dbae34}
+  60%{ border-top: 5px solid #db3442}
+  100%{ border-top: 5px solid #62b42b}
+}
+
+@keyframes flash_border2 {
+  0%{ border-bottom:5px solid #13bd16}
+  30%{ border-bottom: 5px solid #dbae34}
+  60%{ border-bottom: 5px solid #db3442}
+  100%{ border-bottom: 5px solid #62b42b}
+}

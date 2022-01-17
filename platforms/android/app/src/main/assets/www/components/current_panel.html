@@ -1,0 +1,34 @@
+
+<div class="row" style="height:30px !important;" ng-show="current_cast">
+    <div class="col" ng-if="user._id==current_cast.caster._id">
+    <button ng-click="reply_cast(current_cast)" class="button button-small button-clear button-icon-right"  ng-class="replied(current_cast) ? 'button-balanced':'button-dark-green'">
+       {{current_cast.replies.length || 0}} <span class="ion-reply"></span>
+    </button>
+    </div>
+
+    <div class="col">
+    <button  ng-disabled="recasted(current_cast)" ng-click="recast(current_cast)" class="button button-sm button-clear button-icon-right" ng-class="recasted(current_cast) ? 'button-balanced':'button-dark-green'">
+        {{current_cast.recasts.length || 0}} <span class="ion-refresh"></span>
+    </button>
+    </div>
+
+
+
+
+    <div class="col">
+        <button ng-if="!liked(current_cast)" ng-click="like_cast(current_cast)" class="button button-sm button-clear button-icon-right button-dark-green">
+            {{current_cast.likes.length || 0}} <span class="ion-heart"></span>
+        </button>
+        <button  ng-if="liked(current_cast)" ng-click="unlike_cast(current_cast)" class="button button-sm button-clear button-icon-right button-assertive">
+            {{current_cast.likes.length || 0}} <span class="ion-heart red"></span>
+        </button>
+    </div>
+
+
+    <div class="col">
+        <button ng-click="share_cast(current_cast)" class="button button-sm button-clear button-icon-right">
+            <span class="ti-share"></span>
+        </button>
+        </div>
+
+</div>

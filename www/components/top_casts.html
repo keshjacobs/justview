@@ -1,0 +1,10 @@
+
+     <div ng-if="!top_casts" class="text-center padding">
+        <ion-spinner class="listening balanced" icon="lines"></ion-spinner> 
+      </div>
+      
+    <div ng-if="top_casts.length > 0" class="list">     
+        <h3 class="title padding">Top casts</h3>
+       <div ng-include="'components/cast.html'" ng-repeat="cast in top_casts | orderBy:'-likes'">
+       </div>
+    </div>

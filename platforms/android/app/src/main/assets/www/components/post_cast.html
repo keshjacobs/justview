@@ -1,0 +1,13 @@
+
+<ion-item class="item-avatar text-left" ng-class="post.recast_id ? 'green-bg':''" ng-if="post.cast">
+    <img class="avatar" style="margin-top: 35px !important;" ui-sref="aprofile({id:post.cast.caster.t_id})" src="{{media+post.cast.caster.photo}}" height="30" />
+    <h6 class="badge badge-clear pull-right">{{timediff(post.cast.date_created)}}</h6>
+    <br><br>
+    <h3 ui-sref="aprofile({id:post.cast.caster.t_id})"><b>{{post.cast.caster.full_name || '...'}}</b></h3>
+    <h4 ui-sref="aprofile({id:post.cast.caster.t_id})">@{{post.cast.caster.user_name || '...'}}</h4>
+    <h4 class="black dark" ng-if="post.cast.title">{{post.cast.title}}</h4>
+    <div ng-include src="'components/post_player.html'"></div>
+</ion-item>
+<br>
+
+

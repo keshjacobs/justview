@@ -1,0 +1,25 @@
+<ion-modal-view cache-view="false" class="bg-grey">
+    <ion-header-bar class="bar bar-header bg-grey">
+         <button ng-click="close_recorder()" ng-hide="file_added || recording" class="button button-clear button-light button-sm button-small"  style="float:left;font-weight: bold;color: rgb(3, 3, 3) !important;">&nbsp;<i class="ion ion-close-round"></i>&nbsp;</button>          
+         <ion-title><b>Recast</b></ion-title>
+    </ion-header-bar>
+    
+      <ion-content class="text-center padding bg-grey">
+   
+
+             <div ng-include src="'components/post_cast.html'"></div>
+             <br>
+            <div class="button-row row padding">
+           
+              <br>
+              <br>
+               <button ng-click="post_cast(post)" ng-disabled="post.casting" class="button button-small button-block button-full button-balanced">
+                Recast
+            </button>
+           </div>
+                    
+      </ion-content>
+ 
+ 
+    </ion-modal-view>
+    

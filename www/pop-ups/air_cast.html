@@ -1,0 +1,20 @@
+<ion-modal-view class="bg-red">
+    <ion-header-bar class="bar bar-header bar-dark bg-red">
+      <button ng-click="close_aircast()" class="button button-clear button-light button-sm button-small"  style="float:left;font-weight: bold;color: rgb(255, 255, 255) !important;">&nbsp;<i class="ion ion-close-round"></i>&nbsp;</button>          
+      <ion-title><b class="light">Now Playing</b></ion-title>
+      </ion-header-bar>
+    
+      <ion-content class="text-center padding bg-red">
+   
+            <br>
+
+
+            <div ng-include src="'components/current_cast.html'"></div>
+
+<!--  
+            <div ng-include src="'components/current_panel.html'"></div>
+            <br> -->
+                    
+      </ion-content>
+    </ion-modal-view>
+    

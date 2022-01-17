@@ -1,0 +1,41 @@
+<ion-modal-view class="bg-grey">
+    <ion-header-bar class="bar bar-header bg-grey">
+            <button ng-click="close_recorder()" ng-disabled="file_added || recording" class="button button-clear button-light button-sm button-small"  style="float:left;font-weight: bold;color: rgb(3, 3, 3) !important;">&nbsp;<i class="ion ion-close-round"></i>&nbsp;</button>          
+            <ion-title><b>Make a cast</b></ion-title>
+          </ion-header-bar>
+    
+      <ion-content class="text-center bg-grey">
+   
+
+            <div class="padding">
+                <h6 style="opacity: 0.6;">
+                  Start the coversation, what do you want to say?
+                </h6>
+             
+  
+            </div>
+
+            <br><br>
+              <div ng-include="'components/recorder.html'"></div>
+              <div class="padding text-left">
+                <div ng-include="'components/mentioner.html'"></div>
+                <br>
+                  <div ng-show="file_added" class="button-row row bg-grey">
+                        <button  ng-disabled="!file_added || recording || post.casting"  ng-click="post_cast(post)" class="button col button-small button-block button-full button-balanced">
+                            POST
+                        </button>
+                        &nbsp;&nbsp;
+                        <button ng-disabled="!file_added || post.casting" ng-click="clear()" class="button button-small button-block button-full col button-outline button-balanced">
+                          Clear
+                        </button>
+                  </div>
+              </div>
+
+             <!-- <div ng-include="'components/add_tags.html'"></div> -->
+        
+ 
+                    
+      </ion-content>
+ 
+    </ion-modal-view>
+    

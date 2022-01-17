@@ -1,0 +1,5 @@
+<div ng-show="trending_topics.length > 0" class="list padding">
+    <h3 class="title">Topics</h3>
+    <div ng-include="'components/topic.html'" ng-repeat="topic in trending_topics | orderBy:-topic.replies.length | limitTo:5">
+    </div>
+</div>

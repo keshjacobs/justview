@@ -1,0 +1,18 @@
+<ion-item class="item-light text-center padding" style="margin-bottom: 16px !important;">
+    <br> 
+    <h2 class="text-left dark">Cast Analytics</h2>
+    <h6 class="text-left dark">Casts overtime</h6>
+   
+
+    <canvas style="width: 140vw !important;" class="chart chart-bar" chart-data="cast_chart.data"
+    chart-labels="cast_chart.labels" chart-series="cast_chart.series" chart-options="cast_chart.options">
+    </canvas>
+    
+
+      <div class="item  item-light text-left padding">
+        <h2 style="margin-top: 8px !important;" class="dark">
+        Total casts <b class="orange pull-right" style="float: right;">{{casts.length || 0}}</b>
+        </h2>
+      </div>
+      <br>
+</ion-item>

@@ -1,0 +1,33 @@
+<br>
+<div class="profile_photo_big" ng-if="profile.t_id!=user.t_id" ng-style="{'background-image':'url('+media+profile.photo+')'}"></div>
+<div class="profile_photo_big text-center" ng-if="profile.t_id==user.t_id" ui-sref="change_photo" ng-style="{'background-image':'url('+media+user.photo+')'}"></div>  
+
+<div class="item padding" style="border:none !important; background-color: transparent !important;margin-top: 4px !important;">
+    <!-- <div class="item-body"> -->
+            <h2 class="text-center">
+                <b class="dark">{{profile.full_name || profile.first_name + ' ' + profile.last_name}}</b>
+            </h2>
+            <h3 ng-if="profile" class="text-center">
+                <b class="text-center red assertive">@{{profile.user_name || '...'}}</b>
+            </h3>
+             <h4 ng-if="profile.bio" class="text-center padding dark black">{{profile.bio}}</h4>        
+              <br>
+
+             <div class="row text-center" style="margin-top: 0px !important;">
+                <div class="col">
+                    <h3><b>{{profile_casts.length || 0 | number}}</b></h3>
+                    <h4 style="opacity: 0.4;">Casts</h4>
+                </div>
+                <div class="col" ui-sref="subscription({user_id:profile.t_id})">
+                    <h3><b>{{profile.subscriptions.length || 0 | number}}</b></h3>
+                    <h4 style="opacity: 0.4;">Subscriptions</h4>
+                </div>
+                <div class="col" ui-sref="subscribers({user_id:profile.t_id})">
+                    <h3><b>{{profile.subscribers.length || 0 | number}}</b></h3>
+                    <h4 style="opacity: 0.4;">Subscribers</h4>
+                </div>
+              </div>
+              <br>
+        <!-- </div> -->
+    </div>
+  

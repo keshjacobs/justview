@@ -1,0 +1,40 @@
+<ion-view class="bg-grey">
+
+  <ion-nav-bar class="bar bg-grey">
+
+    <ion-nav-title>
+      <b>Settings</b>
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <button class="button button-clear" back-button nav-direction="back">
+        <i class="icon ion-ios-arrow-back dark"></i></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+<br>
+    <div class="item item-divider"><b>Security settings</b></div>
+    <div ui-sref="front.changepassword" class="item text-left item-icon-right">
+      <i class="icon ion-lock-combination balanced"></i> Change password
+    </div>
+
+<br>
+    <!-- <div class="item item-divider"><b>Personal</b></div>
+
+    <div ui-sref="change_photo" class="item text-left item-icon-right">
+      <i class="icon ti-angle-right balanced"></i> Change Profile Photo
+    </div>
+
+    <div ui-sref="subscription" class="item text-left item-icon-right">
+      <i class="icon ti-angle-right balanced"></i> Subscriptions
+    </div> -->
+
+
+<br>
+    <div ng-click="logout()" class="item text-left item-icon-right assertive">
+      LOGOUT
+    </div>
+
+  </ion-content>
+</ion-view>

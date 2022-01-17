@@ -1,0 +1,37 @@
+<ion-view  align-title="left" class="bg-grey" ng-init="search_box.hide()" cache-view="false">
+
+
+    <ion-nav-bar class="bar bg-grey">
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" back-button>
+              <i class="icon ion-ios-arrow-back dark"></i></button>
+          </ion-nav-buttons>
+        <ion-nav-title class="text-center" align="center">
+          <b style="margin-top: 20px !important;">{{profile.user_name || '...'}}</b>
+        </ion-nav-title>
+        
+    </ion-nav-bar>
+    
+    
+    <ion-content class="bg-grey">
+              <ion-refresher  icon="ion-loading-d" 
+              pulling-text="Pull to refresh"
+              on-refresh="fetch_profile(profile.t_id)">
+              </ion-refresher>
+              <div ng-include src="'components/profile_card.html'"></div>
+              <div ng-include src="'components/profile_casts.html'"></div>
+              <br><br><br><br><br><br>
+    </ion-content>
+    
+    
+
+    
+    <div ng-include src="'components/now_playing.html'"></div>
+
+  
+      
+          
+    
+    </ion-view>
+    
+    

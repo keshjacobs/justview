@@ -1,0 +1,5 @@
+<div class="item" ng-click="open_cast(topic)" ng-if="topic.title">
+  <h6 ng-if="topic.tags[0]">Trending in <b>{{topic.tags[0] || '...'}}</b></h6>
+  <b>{{topic.title}}</b>
+    <h6 class="balanced" ng-if="topic.replies.length > 0"><b>{{topic.replies.length || 0}} replies</b></h6>
+  </div>

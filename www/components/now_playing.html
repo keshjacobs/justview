@@ -1,0 +1,30 @@
+
+    <div ng-if="current_cast.cast" class="item item-assertive padding now_playing bg-red">
+        <!-- <ion-spinner ng-click="open_aircast()" ng-if="current_cast.bar <= 0 && current_cast.casting" style="margin-top: 15px !important;float:left !important;" icon="crescent" class="spinner-assertive"></ion-spinner>
+        <ion-spinner ng-click="open_aircast()" ng-if="current_cast.bar > 0 && current_cast.casting" style="margin-top: 15px !important;float:left !important;" icon="lines" class="spinner-assertive"></ion-spinner> -->
+        <!-- <ion-icon ng-click="drop_aircast()" ng-if="!current_cast.casting" style="margin-top: 18px !important;float:left !important;margin-left:10px !important;" class="ion ion-close light"></ion-icon> -->
+        <div class="profile-photo" style="float: left !important;margin-left: -4px !important;" ui-sref="aprofile({id:current_cast.caster.t_id})" ng-style="{'background-image':'url('+media+current_cast.caster.photo+')'}"></div>
+        <div  style="margin-left:36px !important;" class="padding">
+        <div ng-click="open_aircast()">
+            <h3 class="light"><b>{{current_cast.caster.full_name || current_cast.caster.first_name +' '+ current_cast.caster.last_name}}</b> &nbsp; 
+            </h3>
+            <h4 class="light" ng-if="current_cast.caster.user_name">@{{current_cast.caster.user_name}}</h4>
+            <h6 class="light" ng-if="cast.title">{{current_cast.title}}</h6>
+        </div>
+    <div>
+    <div class="pull-right" style="float: right !important;margin-top: -40px !important;">
+        <button ng-if="current_cast.casting" ng-click="pause_cast()" class="button button-clear button-balanced button-icon">
+            <span class="icon ion-pause light" style="font-size: 22px !important;"></span>
+        </button>
+        <button ng-if="!current_cast.casting" ng-disabled="!current_cast.cast" ng-click="play_cast(current_cast)" class="button button-clear button-balanced button-icon">
+            <span class="icon ion-play light" style="font-size: 22px !important;"></span>
+        </button>
+    </div>
+    <br>
+
+
+</div>
+    </div>
+    <!-- <div ng-include src="'components/current_duration.html'"></div> -->
+</div>
+

@@ -1,0 +1,44 @@
+{
+  "_args": [
+    [
+      "cordova-android-firebase-gradle-release@4.0.0",
+      "C:\\Users\\HP\\Desktop\\Projects\\MunchBox\\munchbox"
+    ]
+  ],
+  "_development": true,
+  "_from": "cordova-android-firebase-gradle-release@4.0.0",
+  "_id": "cordova-android-firebase-gradle-release@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-twZvTYUTEWgvChEm0CweNKF59Wy1Q6p399EKqhlLq/oEEHIJaeeRSWhCtD52bYgq2Yl1zOrVmO7sc6H0RHdEWw==",
+  "_location": "/cordova-android-firebase-gradle-release",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-android-firebase-gradle-release@4.0.0",
+    "name": "cordova-android-firebase-gradle-release",
+    "escapedName": "cordova-android-firebase-gradle-release",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-android-firebase-gradle-release/-/cordova-android-firebase-gradle-release-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "C:\\Users\\HP\\Desktop\\Projects\\MunchBox\\munchbox",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "dependencies": {
+    "q": "^1.4.1",
+    "semver": "5.6.0",
+    "xml2js": "^0.4.16"
+  },
+  "description": "Cordova/Phonegap plugin for Android to align versions of the Firebase library components specified by other plugins to a specific version.",
+  "devDependencies": {},
+  "license": "MIT",
+  "name": "cordova-android-firebase-gradle-release",
+  "version": "4.0.0"
+}

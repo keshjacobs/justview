@@ -1,0 +1,27 @@
+<div ng-controller="Cast">
+        
+    <div class="padding">
+        <h3>Casts</h3>
+     </div>
+     
+  
+
+    
+<div  ng-class="fetching_casts ? 'edge_loader':''">
+   <div ng-include="'components/cast.html'" ng-repeat="cast in my_casts | unique:'_id' | orderBy:'-date_created' track by $index">
+   </div>
+   <div ng-if="!fetching_casts && my_casts.length < 1" class="text-center padding">
+   
+    <br>
+    <br>
+    <h5>No casts available</h5>
+
+</div>
+  
+   <div ng-if="fetching_casts" class="text-center padding">
+    <Br>
+    <ion-spinner icon="crescent"></ion-spinner> 
+</div>
+</div>
+
+</div>

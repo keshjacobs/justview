@@ -1,0 +1,41 @@
+<ion-view class="bg-white">
+   
+  
+  <ion-content class="padding text-center bg-white">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <img src="/img/icon-green.png" height="130" />
+    <br>
+    <br>
+    <h5 class="dark">Manage casts, monitor and your analytics</h5>
+    <form ng-submit="login(det)">
+      <div class="padding">
+         <e class="text-center" ng-if="error">{{error}}</e>
+
+         
+    <label class="item item-input">
+      <div class="row">
+      <b class="text-center" style="padding-top:8px;"><i class="ion-at assertive"></i></b>  &nbsp;&nbsp;&nbsp;
+      <input class="col-90" ng-model="det.user_name" type="text" style="font-size: 15px;border:none !important;" placeholder="Username" required>
+      </div>
+    </label>
+
+    <label class="item item-input">
+      <div class="row">
+          <b class="text-center" style="padding-top:8px;"><i class="ti ion-lock-combination red"></i></b> &nbsp;&nbsp;&nbsp;
+          <input class="col-90" type="password" ng-model="det.password" style="font-size: 15px;border:none !important;" placeholder="Your Password" required>
+      </div>
+    </label>
+
+
+
+     <button class="button button-full button-assertive">Login</button> 
+
+    </div>
+    </form>
+ 
+  </ion-content>
+</ion-view>

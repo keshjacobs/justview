@@ -1,0 +1,32 @@
+<ion-item style="padding:0px !important;padding-bottom: 10px !important; height: auto !important;float: left !important;width: 100vw !important;border: 0.5px solid rgb(235, 233, 233) !important;">
+    <div class="profile-photo" ui-sref="aprofile({id:cast.caster.t_id})" ng-style="{'background-image':'url('+media+cast.caster.photo+')'}"></div>
+    <div style="margin-left:40px !important;margin-top: 4px !important;" class="padding">
+        <div ng-click="open_cast(cast)" style="min-width: 60vw !important;float: left !important;height: auto;display: inline;">
+            <h6 class="badge badge-clear pull-right" style="margin-top: -7px !important;margin-right:-20px !important;">
+                &nbsp; {{timediff(cast.date_created)}}
+            </h6>
+           <h3><b>{{cast.caster.full_name || cast.caster.first_name +' '+ cast.caster.last_name}}</b></h3>
+            <h4 ng-if="cast.caster.user_name" class="dark-red">@{{cast.caster.user_name}}</h4>
+
+             <div class="item-body" style="margin-top: -24px !important;margin-bottom: 3px !important; padding-bottom:0px !important;">
+                <h6 ng-if="cast.reply">Replying to <b class="assertive">@{{cast.reply.caster.user_name}}</b></h6>
+                <h3 class="dark" ng-if="cast.title"  style="margin-bottom: -7px !important;">{{cast.title}}</h3>
+                <h5>
+                        <span class="icon ion-person-stalker"></span>  {{cast.listens.length || 0 | number:0}} Listened
+                    &nbsp;
+                    <b class="oran" ng-if="has_played(cast)">
+                        <i class="icon ion-star"></i>NEW!
+                    </b>
+                </h5>
+            </div>
+        </div>
+        <div ng-show="!cast.recast || cast.cast" ng-include src="'components/player.html'"></div>
+        <div ng-include src="'components/mentions.html'"></div>
+        <div ng-include src="'components/recast.html'"></div>
+        <div ng-include src="'components/reply.html'"></div>
+        <br>
+        <br>
+    </div>
+    
+    <br>
+ </ion-item>

@@ -1,0 +1,18 @@
+<div ng-class="cast.user.t_id==t_id ? 'message_a':'message_b'">
+  
+   <ion-item ng-if="cast.user" ng-class="cast_status(cast)" style="padding: 4px !important;">
+    <div class="profile-photo" ui-sref="aprofile({id:cast.user.t_id})" ng-style="{'background-image':'url('+media+cast.user.photo+')'}"></div>
+    <div  style="margin-left:40px !important;" class="padding">
+       
+        <h3><b>{{cast.user.full_name || cast.user.first_name +' '+ cast.user.last_name}}</b></h3>
+        <h4 class="drak-red" ui-sref="aprofile({id:cast.user.t_id})">@{{cast.user.user_name}}</h4>
+        <h6>
+          {{timediff(cast.date_created)}}
+         </h6>
+        <h5 class="dark" ng-if="!cast.expired && cast.listens.length > 1">&nbsp;&nbsp;&nbsp; {{cast.listens.length || 0 | number:0}} Listened</h5>
+        <div ng-include src="'components/player2.html'"></div>
+    </div>
+    <div ng-include src="'components/duration.html'"></div>
+  </ion-item>
+
+</div>

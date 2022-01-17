@@ -1,0 +1,38 @@
+<ion-view cache-view="true" ng-init="explore()">
+  
+  
+  
+  <div class="billboard" style="height: 95px !important;width: 100vw !important;margin-top: 0px;padding-top:8px !important;">
+
+   <ion-header style="float: left !important;width:100% !important;margin-top: -15px !important;">
+    <div ng-include src="'components/search.html'"></div>
+     </ion-header>
+ 
+ 
+     </div>
+ 
+ 
+ 
+   
+     <ion-content has-header style="margin-top: 90px !important;background-color: rgb(241, 241, 241);padding-top: 10px !important;" ng-class="casts_loading ? ' edge_loader':''">
+      
+      
+      <ion-refresher pulling-text="Pull to refresh" on-refresh="explore()"></ion-refresher>
+       <ion-list>
+        <div ng-include src="'components/top_casts.html'"></div>
+
+      </ion-list>
+        
+<br><br><br>
+       
+    </ion-content>
+
+
+    
+    <div ng-include src="'components/now_playing.html'"></div>
+
+  
+  </ion-view>
+  
+  
+  

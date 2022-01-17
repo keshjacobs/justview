@@ -1,0 +1,6 @@
+configurations.all {        
+    resolutionStrategy {
+        
+        force 'com.google.firebase:firebase-analytics:17.0.0', 'com.google.firebase:firebase-auth:18.0.0', 'com.google.firebase:firebase-firestore:20.0.0', 'com.google.firebase:firebase-messaging:20.1.+', 'com.google.firebase:firebase-inappmessaging:18.0.1', 'com.google.firebase:firebase-inappmessaging-display:18.0.1', 'com.google.firebase:firebase-perf:18.0.0', 'com.google.firebase:firebase-config:18.0.0'        
+    }        
+}

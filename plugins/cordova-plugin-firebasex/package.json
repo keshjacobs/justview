@@ -1,0 +1,73 @@
+{
+  "_from": "cordova-plugin-firebasex@10.2.0",
+  "_id": "cordova-plugin-firebasex@10.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wxIWuitfmSOd9EMmQPCTYr1urBpgMRIijzv+Clcc1U2nzIUw4NNPLs/PiTMOjKnZpRJamVD1UtyAmbMVU9lm3w==",
+  "_location": "/cordova-plugin-firebasex",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-firebasex@10.2.0",
+    "name": "cordova-plugin-firebasex",
+    "escapedName": "cordova-plugin-firebasex",
+    "rawSpec": "10.2.0",
+    "saveSpec": null,
+    "fetchSpec": "10.2.0"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebasex/-/cordova-plugin-firebasex-10.2.0.tgz",
+  "_shasum": "fad17b243d71443ec8086b8d9aa2ef8822aa3e77",
+  "_spec": "cordova-plugin-firebasex@10.2.0",
+  "_where": "/Users/abraham/Desktop/Projects/JustTalk/justtalk",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "bugs": {
+    "url": "https://github.com/dpa99c/cordova-plugin-firebase/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-firebase",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "plist": "^3.0.1",
+    "semver": "^7.3.2",
+    "xcode": "^3.0.1",
+    "xml-js": "^1.6.11"
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for Google Firebase",
+  "homepage": "https://github.com/dpa99c/cordova-plugin-firebase#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "firebase",
+    "push",
+    "notifications",
+    "phone auth"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-firebasex",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpa99c/cordova-plugin-firebase.git"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --verbose",
+    "test": "npm run test:ios && npm run test:android",
+    "test:android": "bash ./test/test-default.sh 9.0.0 android 8.1.0 && bash ./test/test-with-3-plugins.sh 9.0.0 android 8.1.0 cordova-plugin-request-location-accuracy cordova-android-play-services-gradle-release cordova-android-firebase-gradle-release",
+    "test:ios": "bash ./test/test-default.sh 9.0.0 ios 5.0.1",
+    "version": "node ./bump-version.js && git add -A plugin.xml"
+  },
+  "types": "./types/index.d.ts",
+  "version": "10.2.0"
+}

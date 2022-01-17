@@ -1,0 +1,40 @@
+<ion-modal-view class="bg-grey">
+    <ion-header-bar class="bar bar-header bg-grey">
+        <button ng-click="mention_box.hide()" class="button button-clear button-light button-sm button-small"  style="float:left;font-weight: bold;color: rgb(3, 3, 3) !important;">&nbsp;<i class="ion ion-close-round"></i>&nbsp;</button>          
+        <ion-title><small><b>Mention</b></small></ion-title>
+    </ion-header-bar>
+    <div class="padding" style="margin-top: 44px !important;padding:4px !important;">
+        <label class="item item-input item-light" style="width:100vw !important;height: 38px !important;border-radius: 20px !important;margin: 6px !important;">
+            <input type="text" autofocus ng-keyup="search_mention(query)" ng-model="query" placeholder="Search for People" style="border:none !important;color:rgb(8, 8, 8) !important; width: 80% !important;">
+        </label>
+    </div>
+  
+    <ion-content class="text-left" style="margin-top: 63px !important;">
+
+
+            <div class="search-results" ng-show="query">
+                
+            <div class="text-center padding">
+                <h5 class="dark" style="color: rgb(39, 38, 38) !important;">Found {{user_results || 0 | number}} found</h5>
+            </div>
+
+            <div  ng-repeat="caster in user_results" ng-include="'components/mention.html'">
+            </div>
+
+            <br><br><br>
+            <div class="text-center" ng-if="!user_results">
+                <br>
+                <ion-spinner icon="crescent"></ion-spinner>         
+            </div>
+
+            <div class="text-center" ng-if="user_results.length==0">
+                <h5 class="dark padding">No result found</h5>
+            </div>
+            
+            </div>
+        
+
+
+    </ion-content>
+
+</ion-modal-view>

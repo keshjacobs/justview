@@ -1,0 +1,38 @@
+<br>
+
+<div class="profile_photo_big text-center" ui-sref="front.change_photo" ng-style="{'background-image':'url('+media+user.photo+')'}"></div>  
+
+<div class="item padding" style="border:none !important; background-color: transparent !important;margin-top: 4px !important;">
+    <!-- <div class="item-body"> -->
+            <h2 class="text-center"><b class="dark">{{user.full_name || user.first_name + ' ' + user.last_name}}</b></h2>
+            <h3 ng-if="user" class="text-center">
+               <b class="text-center red assertive">@{{user.user_name || '...'}}</b> 
+            </h3>
+             <h6 ng-if="user.bio" class="text-center padding dark black">{{user.bio}}</h6>        
+              <br>
+             <div class="row text-center" style="margin-top: 0px !important;">
+                <div class="col">
+                    <h3><b>{{user.casts.length || 0 | number}}</b></h3>
+                    <h4 style="opacity: 0.4;">Casts</h4>
+                </div>
+                <div class="col" ui-sref="subscription({user_id:user.t_id})">
+                    <h3><b>{{user.subscriptions.length || 0 | number}}</b></h3>
+                    <h4 style="opacity: 0.4;">Subscriptions</h4>
+                </div>
+                <div class="col" ui-sref="subscribers({user_id:user.t_id})">
+                    <h3><b>{{user.subscribers.length || 0 | number}}</b></h3>
+                    <h4 style="opacity: 0.4;">Subscribers</h4>
+                </div>
+              </div>
+<br>
+             <div class="row">
+                <button ui-sref="front.edit_profile" class="button button-small button-block button-icon button-icon-right pull-left button-white col">
+                    Edit &nbsp;&nbsp;<span class="ion ion-edit"></span>
+                </button>  
+                &nbsp;
+                 <button ng-controller="Cast" ng-click="start_talk()" class="button button-small button-block button-icon button-icon-right pull-right bg-gr col">
+                   Post &nbsp;&nbsp;<span class="ion ion-plus-circled"></span>
+                </button>
+             </div>
+        <!-- </div> -->
+    </div>

@@ -1,0 +1,39 @@
+<ion-view cache-view="true" class="bg-grey"  ng-init="fetch_data()">
+
+            <ion-content class="bg-grey padding" ng-class="home_loader ? ' edge_loader':''">
+       <ion-refresher pulling-text="Pull to refresh" on-refresh="fetch_data()"></ion-refresher>
+                <div class="item item-avatar" style="background-color: transparent; border: transparent;">
+                    <img src="{{media + user.photo}}" class="avatar"/>
+                    <div class="pull-right" style="float: right !important; margin-right: 20px !important;">
+                        <select ng-model="year" ng-change="change_year(year)">
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                          <option value="2020">2020</option>
+                          <option value="2019">2019</option>
+                        </select>
+                      </div>
+                    <h2 style="margin-top: 8px !important;">welcome <b>{{user.full_name}}</b></h2>
+                </div>
+
+                <br>
+
+                <div ng-include src="'components/cast_chart.html'"></div>
+    
+                <div ng-include src="'components/user_chart.html'"></div>
+    
+           
+            
+            
+    <br><Br><br><br><br>
+
+    </ion-content>
+
+    
+    <div ng-include src="'components/now_playing.html'"></div>
+
+  
+      
+  </ion-view>
+  
+  
+  
