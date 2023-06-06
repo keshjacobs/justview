@@ -266,22 +266,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-audioinput": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-audioinput"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-media-capture": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-media-capture@^3.0.3"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-opentok-android-permissions": {
     "source": {
       "type": "registry",

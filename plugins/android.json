@@ -99,9 +99,6 @@
     "cordova-plugin-androidx-adapter": {
       "PACKAGE_NAME": "com.kesh.justview"
     },
-    "cordova-plugin-audioinput": {
-      "PACKAGE_NAME": "com.kesh.justview"
-    },
     "cordova-plugin-camera": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.kesh.justview"
@@ -148,9 +145,6 @@
       "PACKAGE_NAME": "com.kesh.justview"
     },
     "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.kesh.justview"
-    },
-    "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.kesh.justview"
     },
     "cordova-plugin-navigationbar-color": {
