@@ -65,7 +65,7 @@
               Directives <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li ng-repeat="chart in charts"><a ng-href="#{{chart | lowercase }}-chart">{{chart}}</a></li>
+              <li ng-repeat="chart in charts track by $index"><a ng-href="#{{chart | lowercase }}-chart">{{chart}}</a></li>
             </ul>
           </li>
           <li><a href="#getting_started">Getting started</a></li>
