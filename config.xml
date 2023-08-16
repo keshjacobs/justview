@@ -185,9 +185,9 @@
     <plugin name="cordova-opentok-android-permissions" source="npm" />
     <plugin name="cordova-plugin-statusbar" spec="git+https://github.com/apache/cordova-plugin-statusbar.git" />
     <plugin name="cordova-android-play-services-gradle-release" spec="^4.0.0">
-        <variable name="PLAY-SERVICES-ADS" value="18.0.0" />
+        <variable name="PLAY-SERVICES-ADS" value="19.4.0" />
         <variable name="PLAY-SERVICES-ADS-IDENTIFIER" value="17.0.0" />
-        <variable name="PLAY-SERVICES-ADS-LITE" value="18.0.0" />
+        <variable name="PLAY-SERVICES-ADS-LITE" value="19.4.0" />
         <variable name="PLAY-SERVICES-AFS-NATIVE" value="17.0.0" />
         <variable name="PLAY-SERVICES-ANALYTICS" value="17.0.0" />
         <variable name="PLAY-SERVICES-ANALYTICS-IMPL" value="17.0.0" />
